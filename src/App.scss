@@ -1,0 +1,31 @@
+//Color
+$blue: #007bff;
+$white: #fff;
+
+//font-size
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+
+//Common
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $m-size;
+}
+
+//bootstrap css
+.btn {
+  font-size: $m-size;
+}
+
+.form {
+  margin-top: 4rem;
+}
+
+.form-control {
+  font-size: $m-size;
+}
