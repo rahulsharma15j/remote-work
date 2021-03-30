@@ -4,6 +4,7 @@ import HomePage from "./components/home-page/HomePage";
 import Login from "./components/user/login/Login";
 import Register from "./components/user/register/register";
 import PageNotFound from "./components/error/page-not-found/404";
+import Freelancer from "./components/dashboard/freelancer/Freelancer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" exact component={HomePage}></Route>
           <Route path="/login" component={Login}></Route>
           <Route path="/register" component={Register}></Route>
+          <Route path="/dashboard/freelancer/" component={Freelancer}></Route>
           <Route component={PageNotFound}></Route>
         </Switch>
       </BrowserRouter>
