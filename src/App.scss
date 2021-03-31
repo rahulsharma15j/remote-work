@@ -1,6 +1,8 @@
 //Color
 $blue: #007bff;
 $white: #fff;
+$white-light: #ffffff;
+$white-grey: #f0efef;
 
 //font-size
 $s-size: 1.2rem;
@@ -15,6 +17,8 @@ html {
 
 body {
   font-size: $m-size;
+  background-color: $white-grey;
+  box-sizing: border-box;
 }
 
 //bootstrap css
