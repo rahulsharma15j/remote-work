@@ -3,6 +3,8 @@ $blue: #007bff;
 $white: #fff;
 $white-light: #ffffff;
 $white-grey: #f0efef;
+$blue: #1d4354;
+$green: #37a000;
 
 //font-size
 $s-size: 1.2rem;
@@ -10,6 +12,12 @@ $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 
+//border radius
+$b-radius: 1rem;
+$b-radius-small: 0.5rem;
+
+//box shadow
+$box-shadow: 0.1rem 0.1rem 0.2rem rgb(216, 216, 216);
 //Common
 html {
   font-size: 62.5%;

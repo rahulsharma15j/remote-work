@@ -28,12 +28,14 @@
   flex-direction: row;
   padding: 0;
   margin-top: 2rem;
+
   &-left {
     width: 20%;
     height: fit-content;
-
+    border-radius: $b-radius;
     padding: 2rem;
     background-color: $white;
+    box-shadow: $box-shadow;
     &__heading {
       margin: 0;
       padding: 0;
@@ -45,11 +47,36 @@
     padding: 2rem 0;
     margin: 0 1rem;
     background-color: $white;
+    border-radius: $b-radius;
+    box-shadow: $box-shadow;
+    &__heading {
+      margin-left: 1rem;
+      padding: 1rem;
+    }
 
     &__list {
       &__item {
-        padding: 1rem;
+        padding: 1.5rem;
+
         border: 0.2rem solid $white-grey;
+        &-header {
+          display: flex;
+          justify-content: space-between;
+          padding: 0.5rem;
+        }
+
+        &-conditions {
+          padding: 0.5rem;
+        }
+
+        &-description {
+          padding: 0.5rem;
+        }
+
+        &-skills button {
+          border-radius: 2rem;
+          margin: 0 0.5rem;
+        }
       }
     }
   }
@@ -59,5 +86,7 @@
     width: 20%;
     background-color: $white;
     height: fit-content;
+    border-radius: $b-radius;
+    box-shadow: $box-shadow;
   }
 }

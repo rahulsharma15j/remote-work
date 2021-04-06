@@ -1,0 +1,60 @@
+@import "../../../App.scss";
+
+.profile {
+  background-color: $white;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  padding: 0;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+    border-bottom: 2px solid $white-grey;
+    &--first {
+      display: flex;
+      align-items: center;
+      &__image {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+      }
+
+      &__user {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        &--name {
+          font-size: 2.5rem;
+          font-weight: bold;
+        }
+
+        &--location {
+          & span {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    &--second {
+      & button {
+        height: 4rem;
+        border-radius: $b-radius-small;
+        margin: 1rem;
+        padding: 0 1.5rem;
+        border: 2px solid $white-grey;
+      }
+      &__public-view {
+        color: $green;
+        background-color: $white;
+      }
+
+      &__profile-settings {
+        color: $white;
+        background-color: $green;
+        border: 2px solid $green;
+      }
+    }
+  }
+}

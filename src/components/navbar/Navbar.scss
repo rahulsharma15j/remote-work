@@ -1,5 +1,8 @@
 @import "../../App.scss";
 
+.bg-primary {
+  background-color: $blue !important;
+}
 .navbar-brand {
   font-size: $l-size;
 }
