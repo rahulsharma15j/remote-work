@@ -5,7 +5,6 @@ import {
   FormControl,
   Button,
   NavbarBrand,
-  NavLink,
   Dropdown,
   DropdownButton,
 } from "react-bootstrap";
@@ -13,9 +12,6 @@ import {
 import { Link } from "react-router-dom";
 
 import "./Navbar.scss";
-
-import Login from "../user/login/Login";
-import HomePage from "../home-page/HomePage";
 
 const NavBar = () => {
   return (

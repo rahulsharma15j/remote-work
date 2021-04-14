@@ -8,12 +8,28 @@
   &__header {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 3rem;
 
     border-bottom: 2px solid $white-grey;
     &--first {
       display: flex;
       align-items: center;
+      position: relative;
+
+      &__edit--image {
+        position: absolute;
+        background-color: $white;
+        z-index: 10;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        border: 2px solid $white-grey;
+        text-align: center;
+        top: -0.5rem;
+        &__icon {
+          top: 1rem;
+        }
+      }
       &__image {
         width: 8rem;
         height: 8rem;

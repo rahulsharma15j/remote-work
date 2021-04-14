@@ -1,6 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMapMarkerAlt,
+  faPencilAlt,
+  faPlusCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
 import UserNav from "../../shared/user-nav/UserNav";
 
@@ -12,11 +16,21 @@ const Profile = () => {
   return (
     <div>
       <UserNav />
-      <div class="container profile">
+      <div className="container profile">
         {/*Section 1*/}
         <header className="profile__header">
           <div className="profile__header--first">
-            <img src={ProfilePic} className="profile__header--first__image" />
+            <div className="profile__header--first__edit--image">
+              <FontAwesomeIcon
+                className="profile__header--first__edit--image__icon"
+                icon={faPencilAlt}
+              />
+            </div>
+            <img
+              src={ProfilePic}
+              alt="img"
+              className="profile__header--first__image"
+            />
             <div className="profile__header--first__user">
               <h2 className="profile__header--first__user--name">John Doe</h2>
               <div className="profile__header--first__user--location">
@@ -35,6 +49,22 @@ const Profile = () => {
           </div>
         </header>
         {/*End of Section 1*/}
+
+        {/*Section 2*/}
+        <div className="profile-body">
+          <div className="profile-body-left">
+            <div className="profile-body-left__view-profile">
+              <header className="profile-body-left__view-profile__header">
+                <h1>View Profile</h1>
+                <FontAwesomeIcon icon={faPlusCircle} />
+                <FontAwesomeIcon icon={faPencilAlt} />
+              </header>
+            </div>
+            <div className="profile-body-left__earnings"></div>
+            <div className="profile-body-left__info"></div>
+          </div>
+        </div>
+        {/*End of Section 2*/}
       </div>
     </div>
   );
